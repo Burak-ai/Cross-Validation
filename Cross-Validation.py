@@ -10,11 +10,9 @@ from sklearn.impute import SimpleImputer
 
 data = pd.read_csv("melb_data.csv")
 
-# Select subset of predictors
 cols_to_use = ['Rooms', 'Distance', 'Landsize', 'BuildingArea', 'YearBuilt']
 X = data[cols_to_use]
 
-# Select target
 y = data.Price
 print(X)
 
