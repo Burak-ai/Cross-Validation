@@ -71,4 +71,7 @@ results = {}
 for i in range(1,9):
   results[i * 50] = get_score(50 * i)
 
+plt.plot(list(results.keys()), list(results.values()))
+plt.show()
+
 
