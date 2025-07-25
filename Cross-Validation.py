@@ -66,6 +66,9 @@ def get_score(n_estimators):
                                   cv=3,
                                   scoring='neg_mean_absolute_error')
     return scores.mean()
-    
+  
+results = {}
+for i in range(1,9):
+  results[i * 50] = get_score(50 * i)
 
 
