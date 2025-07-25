@@ -74,4 +74,6 @@ for i in range(1,9):
 plt.plot(list(results.keys()), list(results.values()))
 plt.show()
 
+n_estimators_best = min(results, key=results.get)
+
 
